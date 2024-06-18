@@ -17,7 +17,7 @@ import Contact from "./components/Contact/contact";
 // import "./components/Navbar/navbar.scss";
 
 import Spinner from "./components/spinner/Spinner";
-import Joinhazel from "./components/JoinHazel/Joinhazel";
+import Joinhaziel from "./components/Joinhaziel/Joinhaziel";
 import Recentnews from "./components/RecentNews/Recentnews";
 import Team from "./components/Team/Team";
 import Sponsors from "./components/Sponsors/Sponsors";
@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     // Split the entire text into words
     const allWords =
-      "HAZEL - HAZEL Charity Foundation. A not-for-profit and non-political organization to firmly and solemnly revolve to provide for ourselves a constitution and to be governed by the provisions therein contained.".split(
+      "haziel - haziel Charity Foundation. A not-for-profit and non-political organization to firmly and solemnly revolve to provide for ourselves a constitution and to be governed by the provisions therein contained.".split(
         " "
       );
 
@@ -77,7 +77,7 @@ function App() {
         <Link to="/joinus">
           <button className="join-btn">Contact </button>
         </Link>
-        <img src="/images/logo2.jpeg" alt="HAZEL Logo" className="logo" />
+        <img src="/images/logo2.jpeg" alt="haziel Logo" className="logo" />
         <button className="support-btn">Support</button>
       </div>
       <div className="description">
@@ -107,9 +107,9 @@ function App() {
             <Link to="/support-us" className="nav-item">
               Projects
             </Link>
-            <Link to="/contact" className="nav-item">
-              Contact-us
-            </Link>
+            // <Link to="/contact" className="nav-item">
+            //   Contact-us
+            // </Link>
             <Link to="/campaign" className="nav-item">
               Campaigns
             </Link>
@@ -128,7 +128,7 @@ function App() {
 
       <Routes>
         <Route path="/Aboutus" element={<Aboutus />} />
-        <Route path="/Register" element={<Register />} />
+        // <Route path="/Register" element={<Register />} />
         <Route path="/Campaign" element={<Campaign />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
